@@ -1,21 +1,39 @@
-# Soroban Project
+# 📦 Decentralized Reputation System
 
-## Project Structure
+## 📜 Project Description
 
-This repository uses the recommended structure for a Soroban project:
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+This smart contract powers a decentralized application (dApp) on the Stellar blockchain that enables users to lease physical or digital assets in exchange for Lumens (XLM). It introduces a built-in **Reputation System** that rewards or penalizes users based on their behavior—such as timely asset returns or disputes.
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+All actions are enforced through smart contracts, ensuring automation, transparency, and trustless interactions between asset owners and lessees.
+
+---
+
+## Contract Address:
+CBNSEM3AQV6X7QKMJ6PFZQWPSJXUBHJIF63FSVNL5AL5LCJCZO6ETCYR
+![alt.text](img.png)
+
+## 🌍 Project Vision
+
+The goal of this project is to enable:
+
+- **Trust-based asset leasing** without intermediaries.
+- **Incentivized user behavior** using on-chain reputation.
+- **Automated lease lifecycle management**, including returns, payments, and disputes.
+- A **fully decentralized platform** for individuals and businesses to lease or rent out digital or physical assets globally.
+
+---
+
+## 🚀 Key Features
+
+| Feature                        | Description                                                                 |
+|-------------------------------|-----------------------------------------------------------------------------|
+| Lease Creation                | Asset owners can create lease contracts with terms, parties, and payments. |
+| Return Handling               | Lessees can return assets, and the system logs timely or late returns.     |
+| Reputation Scoring            | User trust scores are adjusted based on return behavior and disputes.       |
+| Dispute Mechanism             | Lessees or owners can raise disputes over lease disagreements.              |
+| Dispute Resolution            | Admin resolves disputes and updates trust scores accordingly.               |
+| History & Transparency        | All lease and dispute data is stored on-chain for transparency.             |
+| Stellar Integration           | Designed for Stellar’s performance and fee-efficiency.                      |
+
+---
+
